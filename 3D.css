@@ -1,0 +1,237 @@
+@import url('./3D.css');
+
+
+article {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+/* .p-3 {
+    width: 200px;
+    height: 200px;
+}
+
+.p-3 p {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 1s;
+    transform: rotateX(20deg) rotateY(60deg);
+
+}
+
+.p-3 p span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.p-3 p span:nth-child(1) {
+    background-color: rgb(0, 248, 215);
+    transform: translateZ(100px);
+}
+
+.p-3 p span:nth-child(2) {
+    background-color: rgb(255, 115, 49, 0.6);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.p-3 p span:nth-child(3) {
+    background-color: rgba(165, 5, 5, 0.6);
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.p-3 p span:nth-child(4) {
+    background-color: rgba(44, 1, 1, 0.6);
+    transform: rotateY(270deg) translateZ(100px);
+}
+
+.p-3 p span:nth-child(5) {
+    background-color: rgba(113, 85, 190, 0.6);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.p-3 p span:nth-child(6) {
+    background-color: rgba(0, 255, 55, 0.6);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+
+.p-3 p {
+    animation: d-3 5s linear infinite;
+}
+
+
+@keyframes d-3 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 45, 90, 360deg);
+    }
+
+}
+ */
+/* 
+.p-4 {
+    width: 400px;
+    height: 150px;
+    perspective: 900px;
+}
+
+
+.p-4 p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    
+
+}
+
+
+.p-4 p span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.p-4 p span:nth-child(1) {
+    background-color: red;
+    transform: rotateY(0deg) translateZ(200px);
+}
+
+.p-4 p span:nth-child(2) {
+    background-color: green;
+    transform: rotateY(120deg) translateZ(200px);
+}
+
+.p-4 p span:nth-child(3) {
+    background-color: blue;
+    transform: rotateY(240deg) translateZ(200px);
+}
+
+.p-4 p {
+    transform: rotateX(-20deg);
+    animation: p-4 15.5s linear infinite;
+    animation-delay: 0.4ms;
+
+}
+
+
+@keyframes p-4 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 180, 0, 360deg);
+    }
+
+    0% {
+        animation-delay: 0s;
+    }
+
+    100% {
+        animation-delay: 10s;
+    }
+}
+
+ */
+
+.a1 {
+    width: 400px; height: 400px; perspective: 1000px;
+}
+
+.a1 p {
+    width: 100%; height: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: rotateY(360deg); 
+    
+   
+}
+
+.a1 p span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    font-size: 30px;
+    background-image: url('./img/Brick_Diagonal_1_roughness.png');
+    background-size: 100%;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(0, 37, 250),
+    0 0 82px rgb(0, 37, 250), 0 0 92px rgb(0, 37, 250), 0 0 102px rgb(0, 37, 250), 0 0 151px rgb(0, 37, 250);
+    box-shadow: 0px 0px 0px 2px black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.a1 p {animation: a1 20s infinite; }
+
+@keyframes a1 {
+
+    0%{transform: rotate3d(0, 0 , 0,0deg);}
+    25%{transform: rotate3d(0, 25, 0, 90deg);}
+    50%{transform: rotate3d(0, 50, 0, 180deg);}
+    75%{transform: rotate3d(0, 75, 0, 270deg);}
+    100%{transform: rotate3d(0,100, 0, 360deg);} 
+    
+}
+
+
+
+
+.a1 p span:nth-child(1) {
+    background-color:rgba(3, 7, 2, 0.4);
+    transform: translateZ(200px);
+}
+
+.a1 p span:nth-child(2) {
+    background-color:rgba(255, 0, 119, 0.4);
+    transform: rotatey(90deg) translateZ(200px);
+}
+
+.a1 p span:nth-child(3) {
+    background-color:rgba(60, 255, 0, 0.4);
+    transform: rotatey(180deg) translateZ(200px);
+
+
+}
+
+.a1 p span:nth-child(4) {
+    background-color:rgba(46, 23, 248, 0.3);
+    transform: rotatey(270deg) translateZ(200px);
+}
+
+.a1 p span:nth-child(5) {
+    background-color:rgba(75, 228, 255, 0.4);
+    transform: rotatex(90deg) translateZ(200px);
+}
+
+.a1 p span:nth-child(6) {
+    background-color:rgba(255, 9, 9, 0.4);
+    transform: rotatex(-90deg) translateZ(200px);
+}
